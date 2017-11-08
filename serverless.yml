@@ -26,11 +26,10 @@ plugins:
   - serverless-offline
 
 custom:
-  webpackIncludeModules:
-    packagePath: './package.json'
+  webpackIncludeModules: true
   serverless-offline:
     babelOptions:
-      presets: ["env"]
+      presets: ["stage-3", [ "env", { "targets": { "node": "6.10" } } ] ]
 
 # you can overwrite defaults here
 #  stage: dev
@@ -69,7 +68,6 @@ functions:
   hello:
     handler: handler.hello
     events:
-      - alexaSkill
       - http:
           method: get
           path: hello

@@ -10,10 +10,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "aws-sdk": "^2.145.0",
+    "aws-sdk": "^2.147.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "babel-plugin-source-map-support": "^1.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-3": "^6.24.1",
     "serverless-offline": "^3.16.0",
     "serverless-webpack": "^4.0.0",
     "webpack": "^3.8.1",
@@ -21,6 +24,7 @@
   },
   "dependencies": {
     "alexa-sdk": "^1.0.18",
-    "babel-polyfill": "^6.26.0"
+    "babel-runtime": "^6.26.0",
+    "source-map-support": "^0.5.0"
   }
 }
