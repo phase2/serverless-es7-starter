@@ -1,0 +1,26 @@
+{
+  "name": "es6-serverless-starter",
+  "version": "1.0.0",
+  "description": "Starter kit for an ES6 Lambda Application",
+  "main": "handler.js",
+  "scripts": {
+    "install": "docker pull lambci/lambda",
+    "start": "./node_modules/.bin/sls offline start -r us-east-1 --noTimeout"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk": "^2.145.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "serverless-offline": "^3.16.0",
+    "serverless-webpack": "^4.0.0",
+    "webpack": "^3.8.1",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "dependencies": {
+    "alexa-sdk": "^1.0.18",
+    "babel-polyfill": "^6.26.0"
+  }
+}
